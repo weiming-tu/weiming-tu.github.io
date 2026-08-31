@@ -28,9 +28,18 @@ page is plain text inside `index.html`.
 
 ## Adding a team member
 
-Open `index.html` and search for `TEAM ROSTER TEMPLATE` (Cmd+F). That
-comment sits inside the `<section id="team">` block and shows exactly what
-HTML to copy for one person, and what each field means:
+The team roster currently has one placeholder person per not-yet-named
+role (four Postdoctoral Fellows, two PhD Students, one Research Associate,
+one Visiting PhD Student), grouped into `.team-card` blocks by role, plus
+the Principal Investigator card with Dr Tu's real entry. Each placeholder
+is deliberately not a plausible fake person: it shows the role as the
+heading (e.g. "Postdoctoral Fellow 2") and "Name to be added" underneath,
+with a plain tinted circle instead of a photo.
+
+To fill one in, open `index.html` and search for `TEAM ROSTER` (Cmd+F).
+That comment sits inside the `<section id="team">` block, directly above
+the roster, and shows exactly what HTML to use for one person once their
+name is known, and what each field means:
 
 - `name` -- the person's full name, as they want it shown
 - `role` -- a short line under the name (job title, or a research topic)
@@ -38,12 +47,16 @@ HTML to copy for one person, and what each field means:
   `assets/team/` folder and point to it; if not, use the placeholder
   circle shown in the template
 
-Copy the block, fill in the three fields, and paste it inside the
-`.team-card` for the right role group (Principal Investigator, or a new
-group you add by copying a whole `.team-card` block and giving it a new
-`<h3>` heading). Nothing else needs to change: the grid re-flows itself as
-cards are added, and the "Now recruiting" note can be edited down or
-removed once the first person actually joins.
+Find the placeholder `.team-person` block for that role and replace it
+in place with the filled-in version (name on top, role underneath -- the
+opposite order from the placeholder, which puts the role on top on
+purpose so it never reads as a real person). Do this one placeholder at a
+time as names are confirmed; don't add, remove or renumber the people
+around it. If a whole new role group is ever needed, copy an entire
+`.team-card` block and give it a new `<h3>` heading. Nothing else needs to
+change: the grid re-flows itself as cards are added. Once every position
+is filled, the "Openings" card and the "Joining" line below the grid can
+be updated to say so.
 
 ## Adding or editing a publication
 
