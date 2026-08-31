@@ -1,8 +1,10 @@
 # The Tu Lab website
 
 A plain static website (no build step, no server-side code). Open
-`index.html` in a browser to preview it, or publish the whole folder to
-GitHub Pages / any static host.
+`index.html` in a browser to preview it. This site is not published yet:
+it is being reviewed with Dr Tu before it goes live, so treat it as a
+local, working draft for now. When it is ready, it can be published to
+GitHub Pages or any static host (see "Publishing later", below).
 
 This README is written for editing the content, not the code. You do not
 need to know how to program to make the changes below: find the text in
@@ -114,8 +116,11 @@ directly by double-clicking also mostly works, except some browsers block
 the map's map-data fetch from a `file://` page -- the local server avoids
 that.)
 
-## Publishing
+## Publishing later
 
-Push this folder to a GitHub repository and turn on GitHub Pages for it
-(Settings -> Pages -> deploy from the branch's root). The `.nojekyll` file
-is already there so GitHub serves the site exactly as written.
+This is not done yet, and should wait until the content has been reviewed
+and approved. When that review is complete, publishing is: push this
+folder to a GitHub repository and turn on GitHub Pages for it (Settings ->
+Pages -> deploy from the branch's root). The `.nojekyll` file is already
+there so GitHub serves the site exactly as written, with no extra setup
+needed at that point.
