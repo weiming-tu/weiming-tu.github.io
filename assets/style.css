@@ -318,13 +318,6 @@ h2.section-title.small { font-size: clamp(24px, 2.4vw, 32px); }
   padding: 20px 0;
   border-top: 1px solid var(--hairline);
 }
-.pub-badge {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 10.5px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
 .pub-main { display: flex; flex-direction: column; gap: 6px; }
 .pub-title { font-size: 16.5px; line-height: 1.4; font-weight: 500; color: var(--ink); }
 .pub-title a { color: inherit; }

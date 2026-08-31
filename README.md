@@ -72,10 +72,13 @@ class="pub-year-heading">`). To add a paper:
    line, the author list, and the venue.
 4. Wrap Dr Tu's name in `<span class="tu">Tu Weiming</span>` wherever it
    appears in the author list -- this is what makes his name bold. Do not
-   shorten or hide the author list, however long it is.
-5. If it's a paper where he is first author or co-first author, add (or
-   remove) a line like `<span class="pub-badge">First author</span>`
-   directly under the author list.
+   shorten or hide the author list, however long it is. There is no
+   separate "first author" badge: the full author list already shows
+   where he sits, so it would only restate what is visible. The one
+   exception is joint first authorship, which isn't visible from order
+   alone -- see the 2022 ACS Synthetic Biology entry's inline "(equal
+   contribution)" note inside the author line for the pattern to copy
+   if a future paper needs it.
 
 The four short "Research" cards near the top of the page (`<section
 id="research">`) also link out to a handful of representative papers each;
