@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Tu Lab &mdash; Weiming Tu, NTU Singapore</title>
+<meta name="description" content="The Tu Lab at Nanyang Technological University: engineering biology for sustainability, led by Dr Weiming Tu, Nanyang Assistant Professor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <a href="#top" class="brand">The Tu Lab</a>
+  <nav class="site-nav">
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#team">Team</a>
+    <a href="mailto:weiming.tu@ntu.edu.sg" class="contact">Contact</a>
+  </nav>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-inner">
+    <!-- Journey map: five career stops are defined in assets/journey-map.js
+         (DEFAULT_STOPS). Edit that file to change a city, date range or
+         label position; no attribute is passed here so the component falls
+         back to its defaults. -->
+    <journey-map animate="true" theme="light" hint-size="100%,100%"></journey-map>
+    <div class="hero-fade"></div>
+    <div class="hero-text">
+      <div class="eyebrow">Nanyang Technological University &middot; Singapore</div>
+      <h1>The Tu Lab</h1>
+      <p>Engineering biology for sustainability: turning CO<sub>2</sub>, sunlight and waste into fuels, chemicals and materials.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap intro-grid">
+    <div style="display:flex; flex-direction:column; gap:26px;">
+      <p class="intro-lede">We redesign microbial cells so they can run on light and electricity instead of sugar, and make useful molecules out of carbon dioxide and waste.</p>
+      <p class="intro-body">The lab works at the meeting point of synthetic biology, environmental biotechnology and machine learning. We install light-harvesting rhodopsins and electron-transfer pathways into bacteria, turn the nanoscale periplasm into a confined "bio-nanoreactor" for solar fuels, and use machine learning to balance the metabolic pathways that follow. The same toolkit is applied to waste streams: sludge, food waste and dairy by-products become bioplastics and platform chemicals. The group is based in the School of Civil and Environmental Engineering and at NEWRI (the Nanyang Environment and Water Research Institute), Nanyang Technological University.</p>
+      <div class="intro-ctas">
+        <a href="#research" class="btn solid">What we work on</a>
+        <a href="#team" class="btn outline">The team</a>
+      </div>
+    </div>
+    <div class="profile-card">
+      <img src="assets/weiming-photo.jpg" alt="Portrait of Dr Weiming Tu">
+      <div>
+        <div class="profile-name">Dr Weiming Tu</div>
+        <div class="profile-titles">Nanyang Assistant Professor<br>School of Civil and Environmental Engineering &amp; NEWRI<br>Nanyang Technological University, Singapore</div>
+      </div>
+      <div class="profile-links">
+        <a href="mailto:weiming.tu@ntu.edu.sg">weiming.tu@ntu.edu.sg</a>
+        <a href="https://scholar.google.com/citations?user=Qt1xXGUAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-4256-5291" target="_blank" rel="noopener">ORCID: 0000-0002-4256-5291</a>
+        <a href="https://sg.linkedin.com/in/weiming-tu-387947234" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="block">
+  <div class="wrap" style="display:flex; flex-direction:column; gap:56px;">
+    <div class="research-head">
+      <div class="eyebrow">Research</div>
+      <h2 class="section-title">Four directions, one carbon cycle</h2>
+      <p>Capture the energy, wire it into a cell, direct the metabolism that uses it, and close the loop with waste. Each direction below is one step of that cycle.</p>
+    </div>
+
+    <div class="research-grid">
+
+      <article class="research-card">
+        <div class="research-num">01</div>
+        <h3>Artificial photosynthesis</h3>
+        <p>Microbial rhodopsin is the simplest light-harvesting system in nature. We install it into non-photosynthetic bacteria such as <em>Escherichia coli</em> and <em>Ralstonia eutropha</em>, giving cells phototrophy they never had, and couple it to extracellular electron transfer. The resulting artificial photosynthesis system reached a photosynthetic efficiency over five times that of natural chlorophyll-based photosynthesis.</p>
+        <div class="research-keywords">Rhodopsin light harvesting &middot; CO<sub>2</sub> fixation &middot; photo-electrosynthesis</div>
+        <div class="research-papers">
+          <a href="https://doi.org/10.1038/s41467-023-43524-4" target="_blank" rel="noopener">Engineering artificial photosynthesis based on rhodopsin for CO<sub>2</sub> fixation &middot; <em>Nature Communications</em>, 2023</a>
+          <a href="https://doi.org/10.1021/acssynbio.2c00397" target="_blank" rel="noopener">Engineering a rhodopsin-based photo-electrosynthetic system in bacteria for CO<sub>2</sub> fixation &middot; <em>ACS Synthetic Biology</em>, 2022</a>
+          <a href="https://doi.org/10.1111/1462-2920.16243" target="_blank" rel="noopener">Rhodopsin driven microbial CO<sub>2</sub> fixation using synthetic biology design &middot; <em>Environmental Microbiology</em>, 2023</a>
+        </div>
+      </article>
+
+      <article class="research-card">
+        <div class="research-num">02</div>
+        <h3>Bio-nanoreactors for solar fuels</h3>
+        <p>The bacterial periplasm is a narrow gap between two membranes. Confining hydrogenase, substrates, proton movement and electron transfer inside it turns the space into a "bio-nanoreactor". Pairing proton-pumping rhodopsin with iron sulfide nanoparticles achieved hydrogen production at an efficiency comparable to costly metal catalysts.</p>
+        <div class="research-keywords">Whole-cell biocatalysis &middot; biohydrogen &middot; solar fuels</div>
+        <div class="research-papers">
+          <a href="https://doi.org/10.1073/pnas.2404958121" target="_blank" rel="noopener">Engineering bionanoreactor in bacteria for efficient hydrogen production &middot; <em>PNAS</em>, 2024</a>
+          <a href="https://doi.org/10.1111/1751-7915.14521" target="_blank" rel="noopener">Rhodopsin-based light-harvesting system for sustainable synthetic biology &middot; <em>Microbial Biotechnology</em>, 2024</a>
+          <span class="note">Ongoing work extends this towards CO<sub>2</sub> fixation into C1 compounds such as formate and methanol, powered by sunlight.</span>
+        </div>
+      </article>
+
+      <article class="research-card">
+        <div class="research-num">03</div>
+        <h3>Machine learning for metabolic engineering</h3>
+        <p>An engineered pathway has more possible configurations than can be tested by hand. We use machine learning to predict and optimise metabolic fluxes, then test the shortlist at the bench, so a bioprocess is designed rather than discovered.</p>
+        <div class="research-keywords">Pathway balancing &middot; metabolic flux optimisation &middot; design&ndash;build&ndash;test&ndash;learn</div>
+        <div class="research-papers">
+          <a href="https://doi.org/10.1016/j.ymben.2025.12.002" target="_blank" rel="noopener">Machine learning-driven optimization of metabolic balance for &beta;-carotene production &middot; <em>Metabolic Engineering</em>, 2026</a>
+          <a href="https://doi.org/10.1021/acs.jafc.5c06628" target="_blank" rel="noopener">From xylose to biobased high-value chemicals: advances in microbial xylose utilization for industrial biotechnology &middot; <em>Journal of Agricultural and Food Chemistry</em>, 2026</a>
+        </div>
+      </article>
+
+      <article class="research-card">
+        <div class="research-num">04</div>
+        <h3>Waste to materials</h3>
+        <p>Sludge, food waste and dairy by-products are carbon sources somebody has already paid for. We engineer microbial cultures to convert them into bioplastics (polyhydroxyalkanoates) and platform chemicals, and at MIT engineered the oleaginous yeast <em>Yarrowia lipolytica</em> to convert acid whey into carotenoids.</p>
+        <div class="research-keywords">Polyhydroxyalkanoates &middot; resource recovery &middot; waste valorisation</div>
+        <div class="research-papers">
+          <a href="https://doi.org/10.1016/j.biortech.2019.121895" target="_blank" rel="noopener">Polyhydroxyalkanoates (PHA) production from fermented thermal-hydrolyzed sludge by PHA-storing denitrifiers &middot; <em>Bioresource Technology</em>, 2019</a>
+          <a href="https://doi.org/10.1016/j.wasman.2019.07.021" target="_blank" rel="noopener">Polyhydroxyalkanoates (PHA) production from fermented thermal-hydrolyzed sludge by mixed microbial cultures &middot; <em>Waste Management</em>, 2019</a>
+          <a href="https://doi.org/10.1016/j.watres.2023.120399" target="_blank" rel="noopener">Deep insight into oriented propionate production from food waste &middot; <em>Water Research</em>, 2023</a>
+          <a href="https://doi.org/10.1021/acs.est.2c05976" target="_blank" rel="noopener">A comprehensive techno-environmental evaluation of a pilot-scale PHAs production from food waste in China &middot; <em>Environmental Science &amp; Technology</em>, 2023</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="team" class="block">
+  <div class="wrap" style="display:flex; flex-direction:column; gap:52px;">
+    <div class="team-head-grid">
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <div class="eyebrow">Team</div>
+        <h2 class="section-title">Building the team</h2>
+      </div>
+      <p>The lab launched at NTU as part of the Nanyang Assistant Professorship scheme and is now building its research group. It brings together synthetic biology, environmental biotechnology and machine learning under one roof, spanning the School of Civil and Environmental Engineering and NEWRI.</p>
+    </div>
+
+    <div class="team-grid">
+
+      <div class="team-card">
+        <div class="team-card-head">
+          <h3>Principal Investigator</h3>
+          <span class="team-count">1</span>
+        </div>
+        <div class="team-person">
+          <img class="team-avatar" src="assets/weiming-photo.jpg" alt="Dr Weiming Tu">
+          <div>
+            <div class="team-person-name">Dr Weiming Tu</div>
+            <div class="team-person-role">Nanyang Assistant Professor</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-head">
+          <h3>Now recruiting</h3>
+        </div>
+        <p class="team-note">The lab is recruiting its first postdocs, PhD students and research staff. Names will be added here as people join &mdash; see the comment in this section's source for the layout a new entry uses.</p>
+      </div>
+
+      <!--
+        TEAM ROSTER TEMPLATE -- add a real person by copying a ".team-card"
+        block (for a new role group) or a ".team-person" block (for a new
+        person inside an existing group). Fields for one person:
+
+          name  : full name, as they want it shown
+          role  : short line under the name (e.g. "PhD student", or a
+                  research focus / thesis topic)
+          photo : optional path under assets/ (e.g. assets/team/jane-doe.jpg);
+                  if omitted, use <div class="team-avatar placeholder"></div>
+                  in place of the <img> tag
+
+        Example of one person entry once a photo exists:
+
+          <div class="team-person">
+            <img class="team-avatar" src="assets/team/jane-doe.jpg" alt="Jane Doe">
+            <div>
+              <div class="team-person-name">Jane Doe</div>
+              <div class="team-person-role">PhD student &middot; bio-nanoreactors</div>
+            </div>
+          </div>
+
+        Without a photo yet:
+
+          <div class="team-person">
+            <div class="team-avatar placeholder"></div>
+            <div>
+              <div class="team-person-name">Jane Doe</div>
+              <div class="team-person-role">PhD student &middot; bio-nanoreactors</div>
+            </div>
+          </div>
+
+        Nothing else on the page needs to change: the grid layout above
+        (.team-grid, .team-card) reflows automatically as cards are added.
+      -->
+
+    </div>
+
+    <div class="joining-row">
+      <div class="eyebrow">Joining</div>
+      <p>Enquiries are welcome year-round from prospective PhD students, postdocs and visiting researchers. Please send a CV and a paragraph on which of the four research directions above you would want to work on. NTU admits PhD students through the NTU Research Scholarship and the Singapore International Graduate Award, and those deadlines are usually the constraint, so early contact helps. <a href="mailto:weiming.tu@ntu.edu.sg">weiming.tu@ntu.edu.sg</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="publications" class="block">
+  <div class="wrap">
+    <div class="pubs-head">
+      <h2 class="section-title small">Publications</h2>
+      <span class="tag">All 23, grouped by year &middot; linked by DOI</span>
+    </div>
+
+    <!-- Every publication is listed (none omitted or hidden behind a
+         "selected" filter), grouped by year, newest first. "Tu Weiming"
+         is wrapped in <span class="tu"> in every author list, with no
+         truncation regardless of author-list length. "First author" /
+         "Co-first author" badges follow content-spec.md exactly. -->
+
+    <div class="pub-year-group">
+      <div class="pub-year-heading mono">2026</div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2026</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1126/science.aeg6547" target="_blank" rel="noopener">&ldquo;Blind box culture exacerbates plastic waste&rdquo;</a></div>
+          <div class="pub-authors"><span class="tu">Tu Weiming</span></div>
+          <span class="pub-badge">First author (sole author)</span>
+          <span class="pub-doi">doi.org/10.1126/science.aeg6547</span>
+        </div>
+        <div class="pub-venue">Science</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2026</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.ymben.2025.12.002" target="_blank" rel="noopener">&ldquo;Machine learning-driven optimization of metabolic balance for &beta;-carotene production&rdquo;</a></div>
+          <div class="pub-authors"><span class="tu">Tu Weiming</span>, Xu Jiabao, Ma Yongshuo, Katsimpouras Constantinos and Stephanopoulos Gregory</div>
+          <span class="pub-badge">First author</span>
+          <span class="pub-doi">doi.org/10.1016/j.ymben.2025.12.002</span>
+        </div>
+        <div class="pub-venue">Metabolic Engineering</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2026</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1021/acs.jafc.5c06628" target="_blank" rel="noopener">&ldquo;From Xylose to Biobased High-Value Chemicals: Advances in Microbial Xylose Utilization for Industrial Biotechnology&rdquo;</a></div>
+          <div class="pub-authors">Zhao Tiantian, Xu Chenyi, Si Jingyuan, Sun Xiaoman, <span class="tu">Tu Weiming</span> and Gu Yang</div>
+          <span class="pub-doi">doi.org/10.1021/acs.jafc.5c06628</span>
+        </div>
+        <div class="pub-venue">Journal of Agricultural and Food Chemistry</div>
+      </div>
+    </div>
+
+    <div class="pub-year-group">
+      <div class="pub-year-heading mono">2024</div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2024</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1073/pnas.2404958121" target="_blank" rel="noopener">&ldquo;Engineering bionanoreactor in bacteria for efficient hydrogen production&rdquo;</a></div>
+          <div class="pub-authors"><span class="tu">Tu Weiming</span>, Thompson Ian P. and Huang Wei E.</div>
+          <span class="pub-badge">First author</span>
+          <span class="pub-doi">doi.org/10.1073/pnas.2404958121</span>
+        </div>
+        <div class="pub-venue">PNAS</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2024</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1111/1751-7915.14521" target="_blank" rel="noopener">&ldquo;Rhodopsin-based light-harvesting system for sustainable synthetic biology&rdquo;</a></div>
+          <div class="pub-authors"><span class="tu">Tu Weiming</span>, Saeed Harris and Huang Wei E.</div>
+          <span class="pub-badge">First author</span>
+          <span class="pub-doi">doi.org/10.1111/1751-7915.14521</span>
+        </div>
+        <div class="pub-venue">Microbial Biotechnology</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2024</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.resconrec.2024.107536" target="_blank" rel="noopener">&ldquo;Evaluation of polyhydroxyalkanoate recovery from food waste by sequencing batch biofilm reactor with high mixed microbial biomass&rdquo;</a></div>
+          <div class="pub-authors">Yu Pengfei, <span class="tu">Tu Weiming</span>, Wu Menghan and Wang Hui</div>
+          <span class="pub-doi">doi.org/10.1016/j.resconrec.2024.107536</span>
+        </div>
+        <div class="pub-venue">Resources, Conservation and Recycling</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2024</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.redox.2024.103144" target="_blank" rel="noopener">&ldquo;S-nitrosocysteamine-functionalised porous graphene oxide nanosheets as nitric oxide delivery vehicles for cardiovascular applications&rdquo;</a></div>
+          <div class="pub-authors">Tabish Tanveer A., Hussain Mian Z., Zervou Sevasti, Myers William K., <span class="tu">Tu Weiming</span>, Xu Jiabao, Beer Ian, Huang Wei E., Chandrawati Rona, Crabtree Mark J. and Winyard Paul G.</div>
+          <span class="pub-doi">doi.org/10.1016/j.redox.2024.103144</span>
+        </div>
+        <div class="pub-venue">Redox Biology</div>
+      </div>
+    </div>
+
+    <div class="pub-year-group">
+      <div class="pub-year-heading mono">2023</div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2023</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1038/s41467-023-43524-4" target="_blank" rel="noopener">&ldquo;Engineering artificial photosynthesis based on rhodopsin for CO2 fixation&rdquo;</a></div>
+          <div class="pub-authors"><span class="tu">Tu Weiming</span>, Xu Jiabao, Thompson Ian P. and Huang Wei E.</div>
+          <span class="pub-badge">First author</span>
+          <span class="pub-doi">doi.org/10.1038/s41467-023-43524-4</span>
+        </div>
+        <div class="pub-venue">Nature Communications</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2023</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1111/1462-2920.16243" target="_blank" rel="noopener">&ldquo;Rhodopsin driven microbial CO2 fixation using synthetic biology design&rdquo;</a></div>
+          <div class="pub-authors"><span class="tu">Tu Weiming</span> and Huang Wei E.</div>
+          <span class="pub-badge">First author</span>
+          <span class="pub-doi">doi.org/10.1111/1462-2920.16243</span>
+        </div>
+        <div class="pub-venue">Environmental Microbiology</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2023</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.coisb.2023.100489" target="_blank" rel="noopener">&ldquo;Construction of microbial platform chassis for CO2 fixation&rdquo;</a></div>
+          <div class="pub-authors">Del Valle Sara, <span class="tu">Tu Weiming</span> and Huang Wei E.</div>
+          <span class="pub-doi">doi.org/10.1016/j.coisb.2023.100489</span>
+        </div>
+        <div class="pub-venue">Current Opinion in Systems Biology</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2023</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.watres.2023.120399" target="_blank" rel="noopener">&ldquo;Deep insight into oriented propionate production from food waste: Microbiological interpretation and design practice&rdquo;</a></div>
+          <div class="pub-authors">Wu Menghan, Liu Xinyu, <span class="tu">Tu Weiming</span>, Xia Jing, Zou Yina, Gong Xiaoyu, Yu Pengfei, Huang Wei E. and Wang Hui</div>
+          <span class="pub-doi">doi.org/10.1016/j.watres.2023.120399</span>
+        </div>
+        <div class="pub-venue">Water Research</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2023</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1021/acs.est.2c05976" target="_blank" rel="noopener">&ldquo;A comprehensive techno-environmental evaluation of a pilot-scale PHAs production from food waste in China&rdquo;</a></div>
+          <div class="pub-authors">Wu Menghan, Gong Xiaoyu, Liu Xinyu, <span class="tu">Tu Weiming</span>, Yu Pengfei, Zou Yina and Wang Hui</div>
+          <span class="pub-doi">doi.org/10.1021/acs.est.2c05976</span>
+        </div>
+        <div class="pub-venue">Environmental Science &amp; Technology</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2023</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.3389/fmicb.2023.1125676" target="_blank" rel="noopener">&ldquo;Artificial intelligence-aided rapid and accurate identification of clinical fungal infections by single-cell Raman spectroscopy&rdquo;</a></div>
+          <div class="pub-authors">Xu Jiabao, Luo Yang, Wang Jing, <span class="tu">Tu Weiming</span>, Yi Xiaofei, Xu Xin, Song Yizhi, Tang Yuguo, Hua Xiaoting, Yu Yunsong, Yin Huabing, Yang Qiwen and Huang Wei E.</div>
+          <span class="pub-doi">doi.org/10.3389/fmicb.2023.1125676</span>
+        </div>
+        <div class="pub-venue">Frontiers in Microbiology</div>
+      </div>
+    </div>
+
+    <div class="pub-year-group">
+      <div class="pub-year-heading mono">2022</div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2022</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1021/acssynbio.2c00397" target="_blank" rel="noopener">&ldquo;Engineering a rhodopsin-based photo-electrosynthetic system in bacteria for CO2 fixation&rdquo;</a></div>
+          <div class="pub-authors">Davison Paul A. and <span class="tu">Tu Weiming</span> (equal contribution), Xu Jiabao, Del Valle Sara, Thompson Ian P., Hunter C. Neil and Huang Wei E.</div>
+          <span class="pub-badge">Co-first author (with Davison)</span>
+          <span class="pub-doi">doi.org/10.1021/acssynbio.2c00397</span>
+        </div>
+        <div class="pub-venue">ACS Synthetic Biology</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2022</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.cej.2022.140356" target="_blank" rel="noopener">&ldquo;Fates of intracellular and extracellular antibiotic resistance genes during sludge anaerobic digestion with different pretreatments&rdquo;</a></div>
+          <div class="pub-authors">Zou Yina, <span class="tu">Tu Weiming</span>, Wu Menghan, Liu Xinyu and Wang Hui</div>
+          <span class="pub-doi">doi.org/10.1016/j.cej.2022.140356</span>
+        </div>
+        <div class="pub-venue">Chemical Engineering Journal</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2022</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.jhazmat.2022.128275" target="_blank" rel="noopener">&ldquo;Deciphering the extracellular and intracellular antibiotic resistance genes in multiple environments reveals the persistence of extracellular ones&rdquo;</a></div>
+          <div class="pub-authors">Zou Yina, Wu Menghan, Liu Jie, <span class="tu">Tu Weiming</span>, Xie Fei, Yu Pengfei, Zou Yang and Wang Hui</div>
+          <span class="pub-doi">doi.org/10.1016/j.jhazmat.2022.128275</span>
+        </div>
+        <div class="pub-venue">Journal of Hazardous Materials</div>
+      </div>
+    </div>
+
+    <div class="pub-year-group">
+      <div class="pub-year-heading mono">2021</div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2021</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.biortech.2021.125116" target="_blank" rel="noopener">&ldquo;Pilot-scale fermentation of urban food waste for volatile fatty acids production: the importance of pH&rdquo;</a></div>
+          <div class="pub-authors">Yu Pengfei, <span class="tu">Tu Weiming</span>, Wu Menghan, Zhang Zhe and Wang Hui</div>
+          <span class="pub-doi">doi.org/10.1016/j.biortech.2021.125116</span>
+        </div>
+        <div class="pub-venue">Bioresource Technology</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2021</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1021/acssuschemeng.1c04726" target="_blank" rel="noopener">&ldquo;Polyhydroxyalkanoate production from food waste coupled with aerobic nitrate reduction&rdquo;</a></div>
+          <div class="pub-authors">Wu Menghan, Liu Xinyu, Xiong Han, <span class="tu">Tu Weiming</span> and Wang Hui</div>
+          <span class="pub-doi">doi.org/10.1021/acssuschemeng.1c04726</span>
+        </div>
+        <div class="pub-venue">ACS Sustainable Chemistry &amp; Engineering</div>
+      </div>
+    </div>
+
+    <div class="pub-year-group">
+      <div class="pub-year-heading mono">2020</div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2020</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.ijbiomac.2019.11.103" target="_blank" rel="noopener">&ldquo;Reducing the effect of non-volatile fatty acids (non-VFAs) on polyhydroxyalkanoates (PHA) production from fermented thermal-hydrolyzed sludge&rdquo;</a></div>
+          <div class="pub-authors"><span class="tu">Tu Weiming</span>, Zou Yina, Wu Menghan and Wang Hui</div>
+          <span class="pub-badge">First author</span>
+          <span class="pub-doi">doi.org/10.1016/j.ijbiomac.2019.11.103</span>
+        </div>
+        <div class="pub-venue">International Journal of Biological Macromolecules</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2020</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.envint.2020.105980" target="_blank" rel="noopener">&ldquo;Anaerobic digestion reduces extracellular antibiotic resistance genes in waste activated sludge: The effects of temperature and degradation mechanisms&rdquo;</a></div>
+          <div class="pub-authors">Zou Yina, <span class="tu">Tu Weiming</span>, Wang Hui and Fang Tingting</div>
+          <span class="pub-doi">doi.org/10.1016/j.envint.2020.105980</span>
+        </div>
+        <div class="pub-venue">Environment International</div>
+      </div>
+    </div>
+
+    <div class="pub-year-group">
+      <div class="pub-year-heading mono">2019</div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2019</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.biortech.2019.121895" target="_blank" rel="noopener">&ldquo;Polyhydroxyalkanoates (PHA) production from fermented thermal-hydrolyzed sludge by PHA-storing denitrifiers integrating PHA accumulation with nitrate removal&rdquo;</a></div>
+          <div class="pub-authors"><span class="tu">Tu Weiming</span>, Zhang Dijia, Wang Hui and Lin Zhe</div>
+          <span class="pub-badge">First author</span>
+          <span class="pub-doi">doi.org/10.1016/j.biortech.2019.121895</span>
+        </div>
+        <div class="pub-venue">Bioresource Technology</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2019</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.wasman.2019.07.021" target="_blank" rel="noopener">&ldquo;Polyhydroxyalkanoates (PHA) production from fermented thermal-hydrolyzed sludge by mixed microbial cultures: The link between phosphorus and PHA yields&rdquo;</a></div>
+          <div class="pub-authors"><span class="tu">Tu Weiming</span>, Zhang Dijia and Wang Hui</div>
+          <span class="pub-badge">First author</span>
+          <span class="pub-doi">doi.org/10.1016/j.wasman.2019.07.021</span>
+        </div>
+        <div class="pub-venue">Waste Management</div>
+      </div>
+
+      <div class="pub-row">
+        <div class="pub-year mono">2019</div>
+        <div class="pub-main">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.biortech.2019.01.077" target="_blank" rel="noopener">&ldquo;Effect of thermal hydrolysis pretreatment on volatile fatty acids production in sludge acidification and subsequent polyhydroxyalkanoates production&rdquo;</a></div>
+          <div class="pub-authors">Zhang Dijia, Jiang Hao, Chang Jiang, Sun Jing, <span class="tu">Tu Weiming</span> and Wang Hui</div>
+          <span class="pub-doi">doi.org/10.1016/j.biortech.2019.01.077</span>
+        </div>
+        <div class="pub-venue">Bioresource Technology</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="name">The Tu Lab</div>
+      <div class="addr">School of Civil and Environmental Engineering &amp; NEWRI<br>Nanyang Technological University, Singapore</div>
+      <a href="mailto:weiming.tu@ntu.edu.sg" class="mono" style="font-size:12.5px;">Email is the best way to reach the lab</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Weiming Tu</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+<script src="assets/journey-map.js"></script>
+</body>
+</html>
