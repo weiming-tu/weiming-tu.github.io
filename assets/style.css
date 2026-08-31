@@ -243,8 +243,15 @@ h2.section-title.small { font-size: clamp(24px, 2.4vw, 32px); }
 }
 .team-head-grid p { margin: 0; font-size: 16.5px; line-height: 1.65; color: var(--text); }
 .team-grid {
+  /* Fixed at two columns (not auto-fit) so the six role panels -- of
+     very different lengths, from one person to four -- pair up as
+     (Principal Investigator, Postdoctoral Fellow), (PhD Student,
+     Master's Student), (Research Associate, Visiting PhD Student) in
+     that document order. The last pair is the same length, so the
+     section ends flush instead of trailing off with whitespace under a
+     short panel; a three-column layout left exactly that gap. */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 44px 40px;
 }
 .team-card {
@@ -272,7 +279,6 @@ h2.section-title.small { font-size: clamp(24px, 2.4vw, 32px); }
 }
 .team-person-name { font-size: 14.5px; color: var(--ink); }
 .team-person-role { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); }
-.team-note { font-size: 14.5px; color: var(--text); line-height: 1.6; }
 
 .joining-row {
   display: flex;

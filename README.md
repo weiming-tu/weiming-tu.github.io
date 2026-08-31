@@ -29,12 +29,13 @@ page is plain text inside `index.html`.
 ## Adding a team member
 
 The team roster currently has one placeholder person per not-yet-named
-role (four Postdoctoral Fellows, two PhD Students, one Research Associate,
-one Visiting PhD Student), grouped into `.team-card` blocks by role, plus
-the Principal Investigator card with Dr Tu's real entry. Each placeholder
-is deliberately not a plausible fake person: it shows the role as the
-heading (e.g. "Postdoctoral Fellow 2") and "Name to be added" underneath,
-with a plain tinted circle instead of a photo.
+role (four Postdoctoral Fellows, two PhD Students, three Master's
+Students, one Research Associate, one Visiting PhD Student), grouped into
+`.team-card` blocks by role, plus the Principal Investigator card with Dr
+Tu's real entry. Each placeholder is deliberately not a plausible fake
+person: it shows the role as the heading (e.g. "Postdoctoral Fellow 2")
+and "Name to be added" underneath, with a plain tinted circle instead of
+a photo.
 
 To fill one in, open `index.html` and search for `TEAM ROSTER` (Cmd+F).
 That comment sits inside the `<section id="team">` block, directly above
@@ -52,11 +53,25 @@ in place with the filled-in version (name on top, role underneath -- the
 opposite order from the placeholder, which puts the role on top on
 purpose so it never reads as a real person). Do this one placeholder at a
 time as names are confirmed; don't add, remove or renumber the people
-around it. If a whole new role group is ever needed, copy an entire
-`.team-card` block and give it a new `<h3>` heading. Nothing else needs to
-change: the grid re-flows itself as cards are added. Once every position
-is filled, the "Openings" card and the "Joining" line below the grid can
-be updated to say so.
+around it. The grid re-flows itself as photos are added, so nothing else
+needs to change for that.
+
+The roster grid (`.team-grid` in `assets/style.css`) is fixed at two
+columns on purpose, not auto-fit: with six role panels of very different
+lengths (one person up to four), a wider auto-fit grid left ragged
+whitespace under the shorter panels in a row, and left the section
+trailing off with a gap on one side. Two columns pairs the panels in
+document order so the last row (Research Associate, Visiting PhD
+Student) is even and the section ends flush. If a whole new role group
+is added later, or the number of people in one changes a lot, re-check
+the rendered page at a few widths to confirm the columns still balance
+reasonably -- rebalancing may mean adjusting `grid-template-columns`, not
+just adding a card.
+
+The "Joining" line below the grid is the only place the site mentions
+whether positions are open; there is deliberately no separate panel or
+note in the grid duplicating it, so update that one line if that ever
+changes.
 
 ## Adding or editing a publication
 
