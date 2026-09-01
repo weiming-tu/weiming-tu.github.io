@@ -1,10 +1,19 @@
 # The Tu Lab website
 
 A plain static website (no build step, no server-side code). Open
-`index.html` in a browser to preview it. This site is not published yet:
-it is being reviewed with Dr Tu before it goes live, so treat it as a
-local, working draft for now. When it is ready, it can be published to
-GitHub Pages or any static host (see "Publishing later", below).
+`index.html` in a browser to preview it locally.
+
+**The site lives at https://weiming-tu.github.io** once GitHub Pages is
+switched on. The code is already on GitHub, but Pages itself has to be
+enabled once, by the repository owner, and only the owner can do it:
+
+> GitHub, this repository, **Settings** > **Pages** > under "Build and
+> deployment", set **Source** to *Deploy from a branch*, then **Branch**
+> to `main` and folder `/ (root)`, and Save. The first build takes a few
+> minutes. After that, every push republishes the site automatically.
+
+Until that switch is flipped, https://weiming-tu.github.io returns a 404
+even though the files are present in the repository.
 
 This README is written for editing the content, not the code. You do not
 need to know how to program to make the changes below: find the text in
@@ -147,11 +156,20 @@ directly by double-clicking also mostly works, except some browsers block
 the map's map-data fetch from a `file://` page -- the local server avoids
 that.)
 
-## Publishing later
+## Publishing changes
 
-This is not done yet, and should wait until the content has been reviewed
-and approved. When that review is complete, publishing is: push this
-folder to a GitHub repository and turn on GitHub Pages for it (Settings ->
-Pages -> deploy from the branch's root). The `.nojekyll` file is already
-there so GitHub serves the site exactly as written, with no extra setup
-needed at that point.
+The repository is `weiming-tu/weiming-tu.github.io` and the site is served
+from the `main` branch's root. The `.nojekyll` file tells GitHub to serve
+the files exactly as written, with no build step.
+
+To publish an edit:
+
+```
+git add -A
+git commit -m "a short note on what changed"
+git push
+```
+
+The live site updates within a minute or two. If nothing appears, check
+that Pages is switched on (see the top of this file): the switch is a
+one-time step and only the repository owner can flip it.
