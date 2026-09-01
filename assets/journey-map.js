@@ -7,8 +7,8 @@
   const DEFAULT_STOPS = [
     { id: "shanghai", city: "Shanghai", lon: 121.47, lat: 31.23, years: "Tongji, 2013–2017", dx: 0, dy: 30, anchor: "middle" },
     { id: "beijing", city: "Beijing", lon: 116.41, lat: 39.90, years: "Tsinghua, 2017–2020", dx: 4, dy: -40, anchor: "middle" },
-    { id: "oxford", city: "Oxford", lon: -1.26, lat: 51.75, years: "DPhil, 2020–2024", dx: -18, dy: -34, anchor: "end" },
-    { id: "boston", city: "Boston", lon: -71.06, lat: 42.36, years: "MIT, 2024–2026", dx: -14, dy: 24, anchor: "end" },
+    { id: "oxford", city: "Oxford", lon: -1.26, lat: 51.75, years: "Oxford, 2020–2024", dx: -18, dy: -34, anchor: "end" },
+    { id: "boston", city: "Boston", lon: -71.06, lat: 42.36, years: "MIT, 2024–2025, 2026 (Summer)", dx: -14, dy: 24, anchor: "end" },
     { id: "singapore", city: "Singapore", lon: 103.82, lat: 1.35, years: "NTU, now", dx: 14, dy: 22, anchor: "start", current: true }
   ];
 
