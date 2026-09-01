@@ -153,18 +153,20 @@
       </div>
 
       <!--
-        TEAM ROSTER -- once a real name is known, replace one placeholder
-        ".team-person" block below with this pattern. Fields for one
-        person:
+        TEAM ROSTER. Only people we can name are shown. The lab is larger
+        than this list: a fourth postdoctoral fellow, two further master's
+        students, a research associate and a visiting PhD student are in
+        the group but not yet named here, so their cards and placeholder
+        entries were removed rather than left showing empty seats.
+
+        To add a person, copy one ".team-person" block into the right card.
+        Fields:
 
           name  : full name, as they want it shown
-          role  : short line under the name (e.g. "Postdoctoral Fellow",
-                  or a research focus / thesis topic)
-          photo : optional path under assets/ (e.g. assets/team/jane-doe.jpg);
-                  if omitted, use <div class="team-avatar placeholder"></div>
-                  in place of the <img> tag
+          role  : short line under the name (a role, or a research focus)
+          photo : optional file under assets/team/
 
-        Example of one person entry once a photo exists:
+        With a photo:
 
           <div class="team-person">
             <img class="team-avatar" src="assets/team/jane-doe.jpg" alt="Jane Doe">
@@ -174,8 +176,7 @@
             </div>
           </div>
 
-        A named person whose photo we do not have yet uses the plain
-        avatar, NOT the hatched one:
+        Without a photo, use the plain avatar:
 
           <div class="team-person">
             <div class="team-avatar blank"></div>
@@ -185,21 +186,20 @@
             </div>
           </div>
 
-        The hatched avatar (class "team-avatar placeholder", with the name
-        line reading "Name to be added") means the seat exists but nobody
-        has told us who fills it. Keep the two distinct: a named colleague
-        wearing the hatched avatar reads as an empty slot.
+        To bring back a role that has nobody named yet (Research Associate,
+        Visiting PhD Student), copy a whole ".team-card" block, change its
+        <h3> and its count badge, and put the people inside it.
 
-        Replace placeholders one at a time as names are confirmed. Do not
-        add, remove or reorder role groups, and keep each card's count
-        badge equal to the number of entries inside it, named and unnamed
-        together. The grid (.team-grid, .team-card) reflows automatically.
+        Keep each card's count badge equal to the number of entries inside
+        it. A hatched avatar (class "team-avatar placeholder") plus a name
+        line reading "Name to be added" is available for an unfilled seat,
+        but none is in use at the moment. The grid reflows automatically.
       -->
 
       <div class="team-card">
         <div class="team-card-head">
           <h3>Postdoctoral Fellow</h3>
-          <span class="team-count">4</span>
+          <span class="team-count">3</span>
         </div>
         <div class="team-person">
           <div class="team-avatar blank"></div>
@@ -220,13 +220,6 @@
           <div>
             <div class="team-person-name">Bixia Qiu</div>
             <div class="team-person-role">Postdoctoral Fellow</div>
-          </div>
-        </div>
-        <div class="team-person">
-          <div class="team-avatar placeholder"></div>
-          <div>
-            <div class="team-person-name">Postdoctoral Fellow</div>
-            <div class="team-person-role">Name to be added</div>
           </div>
         </div>
       </div>
@@ -255,55 +248,13 @@
       <div class="team-card">
         <div class="team-card-head">
           <h3>Master&rsquo;s Student</h3>
-          <span class="team-count">3</span>
+          <span class="team-count">1</span>
         </div>
         <div class="team-person">
           <div class="team-avatar blank"></div>
           <div>
             <div class="team-person-name">Jianan Wang</div>
             <div class="team-person-role">Master&rsquo;s Student</div>
-          </div>
-        </div>
-        <div class="team-person">
-          <div class="team-avatar placeholder"></div>
-          <div>
-            <div class="team-person-name">Master&rsquo;s Student</div>
-            <div class="team-person-role">Name to be added</div>
-          </div>
-        </div>
-        <div class="team-person">
-          <div class="team-avatar placeholder"></div>
-          <div>
-            <div class="team-person-name">Master&rsquo;s Student</div>
-            <div class="team-person-role">Name to be added</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="team-card">
-        <div class="team-card-head">
-          <h3>Research Associate</h3>
-          <span class="team-count">1</span>
-        </div>
-        <div class="team-person">
-          <div class="team-avatar placeholder"></div>
-          <div>
-            <div class="team-person-name">Research Associate</div>
-            <div class="team-person-role">Name to be added</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="team-card">
-        <div class="team-card-head">
-          <h3>Visiting PhD Student</h3>
-          <span class="team-count">1</span>
-        </div>
-        <div class="team-person">
-          <div class="team-avatar placeholder"></div>
-          <div>
-            <div class="team-person-name">Visiting PhD Student</div>
-            <div class="team-person-role">Name to be added</div>
           </div>
         </div>
       </div>
