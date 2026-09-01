@@ -19,7 +19,7 @@
              dot:"#2f6b43", leader:"#a9b79c", label:"#1b2418", year:"#6f7a68" }
   };
 
-  const ATLAS = "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json";
+  const ATLAS = "assets/countries-110m.json";
 
   const waitForLibs = () => new Promise((resolve, reject) => {
     const t0 = Date.now();

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Tu Lab: Weiming Tu, NTU Singapore</title>
-<meta name="description" content="The Tu Lab at Nanyang Technological University: engineering biology for sustainability, led by Dr Weiming Tu, Nanyang Assistant Professor.">
+<title>CIRCLE Lab: The Tu Lab, Weiming Tu, NTU Singapore</title>
+<meta name="description" content="CIRCLE Lab (The Tu Lab) at Nanyang Technological University: engineering biology for sustainability, led by Dr Weiming Tu, Nanyang Assistant Professor.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -13,7 +13,13 @@
 <body>
 
 <header class="site">
-  <a href="#top" class="brand">The Tu Lab</a>
+  <a href="#top" class="brand">
+    <img src="assets/circle-logo.png" alt="CIRCLE Lab" class="brand-mark">
+    <span class="brand-text">
+      <span class="brand-name">CIRCLE Lab</span>
+      <span class="brand-sub mono">The Tu Lab &middot; NTU</span>
+    </span>
+  </a>
   <nav class="site-nav">
     <a href="#research">Research</a>
     <a href="#publications">Publications</a>
@@ -23,17 +29,28 @@
 </header>
 
 <section id="top" class="hero">
-  <div class="hero-inner">
-    <!-- Journey map: five career stops are defined in assets/journey-map.js
-         (DEFAULT_STOPS). Edit that file to change a city, date range or
-         label position; no attribute is passed here so the component falls
-         back to its defaults. -->
-    <journey-map animate="true" theme="light" hint-size="100%,100%"></journey-map>
-    <div class="hero-fade"></div>
-    <div class="hero-text">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
       <div class="eyebrow">Nanyang Technological University &middot; Singapore</div>
-      <h1>The Tu Lab</h1>
-      <p>Engineering biology for sustainability: turning CO<sub>2</sub>, sunlight and waste into fuels, chemicals and materials.</p>
+      <div class="hero-titles">
+        <h1>CIRCLE Lab</h1>
+        <div class="hero-sub mono">The Tu Lab &middot; Weiming Tu</div>
+      </div>
+      <div class="acronym-band">
+        <span style="color:#3d7a4e;"><b>C</b>arbon</span>
+        <span class="dot"></span>
+        <span style="color:#2f7a6a;"><b>I</b>nnovation</span>
+        <span class="dot"></span>
+        <span style="color:#2a6a86;"><b>R</b>e<b>C</b>ycling</span>
+        <span class="dot"></span>
+        <span style="color:#2a5f8f;"><b>L</b>ife <b>E</b>ngineering</span>
+        <span class="dot"></span>
+        <span style="color:#1e3a6b;">AI</span>
+      </div>
+      <p class="hero-tagline">Engineering biology for sustainability: turning CO<sub>2</sub>, sunlight and waste into <span class="accent-text">fuels, chemicals and materials</span>.</p>
+    </div>
+    <div class="hero-logo">
+      <img src="assets/circle-logo.png" alt="CIRCLE Lab: Carbon, Innovation, Recycling, Life Engineering, AI">
     </div>
   </div>
 </section>
@@ -64,12 +81,46 @@
   </div>
 </section>
 
+<section class="trajectory">
+  <div class="trajectory-inner">
+    <!-- Journey map: five career stops are defined in assets/journey-map.js
+         (DEFAULT_STOPS). Edit that file to change a city, date range or
+         label position; no attribute is passed here so the component falls
+         back to its defaults. -->
+    <journey-map animate="true" theme="light" hint-size="100%,100%"></journey-map>
+    <div class="trajectory-fade"></div>
+    <div class="trajectory-caption">
+      <div class="eyebrow">Trajectory</div>
+      <p>Tongji and Tsinghua, then Oxford and MIT, and now NTU Singapore.</p>
+    </div>
+  </div>
+</section>
+
 <section id="research" class="block">
   <div class="wrap" style="display:flex; flex-direction:column; gap:56px;">
-    <div class="research-head">
-      <div class="eyebrow">Research</div>
-      <h2 class="section-title">Four directions, one carbon cycle</h2>
-      <p>Capture the energy, wire it into a cell, direct the metabolism that uses it, and close the loop with waste. Each direction below is one step of that cycle.</p>
+    <div class="research-head-row">
+      <div class="research-head">
+        <div class="eyebrow">Research</div>
+        <h2 class="section-title">Four directions, one carbon cycle</h2>
+        <p>Capture the energy, wire it into a cell, direct the metabolism that uses it, and close the loop with waste. Each direction below is one step of that cycle.</p>
+      </div>
+
+      <div class="cycle-ring" aria-hidden="true">
+        <div class="cycle-ring-outer"></div>
+        <div class="cycle-ring-inner"></div>
+
+        <div class="cycle-node cycle-node-top">01</div>
+        <div class="cycle-label cycle-label-top mono">Capture</div>
+
+        <div class="cycle-node cycle-node-right">02</div>
+        <div class="cycle-label cycle-label-right mono">Confine</div>
+
+        <div class="cycle-node cycle-node-bottom">03</div>
+        <div class="cycle-label cycle-label-bottom mono">Direct</div>
+
+        <div class="cycle-node cycle-node-left">04</div>
+        <div class="cycle-label cycle-label-left mono">Close</div>
+      </div>
     </div>
 
     <div class="research-grid">
@@ -556,7 +607,7 @@
 <footer class="site">
   <div class="footer-inner">
     <div class="footer-brand">
-      <div class="name">The Tu Lab</div>
+      <div class="name"><img src="assets/circle-logo.png" alt="" class="logo-mark">CIRCLE Lab <span class="mono footer-sub">The Tu Lab</span></div>
       <div class="addr">School of Civil and Environmental Engineering &amp; NEWRI<br>Nanyang Technological University, Singapore</div>
       <a href="mailto:weiming.tu@ntu.edu.sg" class="mono" style="font-size:12.5px;">Email is the best way to reach the lab</a>
     </div>
