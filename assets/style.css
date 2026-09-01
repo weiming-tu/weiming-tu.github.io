@@ -273,8 +273,14 @@ h2.section-title.small { font-size: clamp(24px, 2.4vw, 32px); }
   width: 34px; height: 34px; flex: 0 0 34px; border-radius: 50%;
   object-fit: cover; border: 1px solid var(--border-strong);
 }
+/* Hatched: no name yet. Plain: a real person whose photo we do not have. The
+   two must look different, or a named colleague reads as an empty slot. */
 .team-avatar.placeholder {
   background: repeating-linear-gradient(135deg, #e6eade 0 6px, #eef1e8 6px 12px);
+  border: 1px solid #d5dcc9;
+}
+.team-avatar.blank {
+  background: #e6eade;
   border: 1px solid #d5dcc9;
 }
 .team-person-name { font-size: 14.5px; color: var(--ink); }
